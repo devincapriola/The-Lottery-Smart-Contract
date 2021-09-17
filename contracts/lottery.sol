@@ -19,4 +19,8 @@ contract Lottery {
         require(msg.sender == manager);
         return address(this).balance;
     }
+    
+    function random() public view returns(uint) {
+        return uint(keccak256(abi.encodePacked(block.difficulty, block.timestamp, players.length)));
+    }
 }
