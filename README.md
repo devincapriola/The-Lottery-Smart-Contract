@@ -1,1 +1,1 @@
-# The-Lottery-Smart-Contract
+# The Lottery Smart Contract
